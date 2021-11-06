@@ -30,8 +30,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "af52e41d-3da9-4ff3-9bca-488453d32b7b",
-    "template": "https://github.com/strapi/strapi-template-ecommerce"
+    "uuid": "af52e41d-3da9-4ff3-9bca-488453d32b7b"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
