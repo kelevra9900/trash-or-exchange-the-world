@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coupons",
+  "info": {
+    "name": "Coupon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "discount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "valid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

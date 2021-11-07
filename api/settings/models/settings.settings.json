@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "app_name": {
+      "type": "string",
+      "required": true
+    },
+    "main_color": {
+      "type": "string",
+      "required": true
+    },
+    "main_dark_color": {
+      "type": "string",
+      "required": true
+    },
+    "second_color": {
+      "type": "string",
+      "required": true
+    },
+    "second_dark_color": {
+      "type": "string",
+      "required": true
+    },
+    "accent_color": {
+      "type": "string",
+      "required": true
+    },
+    "accent_dark_color": {
+      "type": "string"
+    },
+    "scaffold_dark_color": {
+      "type": "string",
+      "required": true
+    },
+    "scaffold_color": {
+      "type": "string",
+      "required": true
+    },
+    "google_maps_key": {
+      "type": "string",
+      "required": true
+    },
+    "fcm_key": {
+      "type": "string",
+      "required": true
+    },
+    "appVersion": {
+      "type": "string",
+      "required": true,
+      "default": "1.0.0"
+    }
+  }
+}
