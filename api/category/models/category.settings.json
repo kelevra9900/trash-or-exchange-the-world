@@ -20,6 +20,10 @@
       "via": "categories",
       "collection": "product",
       "dominant": true
+    },
+    "subcategories": {
+      "via": "categories",
+      "collection": "subcategorie"
     }
   }
 }
