@@ -21,9 +21,13 @@
       "required": true
     },
     "categories": {
-      "collection": "category",
       "via": "subcategories",
+      "collection": "category",
       "dominant": true
+    },
+    "products": {
+      "via": "subcategories",
+      "collection": "product"
     }
   }
 }
