@@ -32,7 +32,8 @@
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "profile"
     },
     "fcm_token": {
       "type": "string",
