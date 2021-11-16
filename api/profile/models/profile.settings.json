@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "age": {
+      "type": "string",
+      "required": true,
+      "default": "21"
+    },
+    "gender": {
+      "type": "string",
+      "required": true,
+      "default": "Unknow"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "default": "000000000"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "fcm_token": {
+      "type": "string",
+      "required": true
+    },
+    "profile_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
