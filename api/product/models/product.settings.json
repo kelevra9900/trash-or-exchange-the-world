@@ -60,6 +60,21 @@
       "collection": "subcategorie",
       "via": "products",
       "dominant": true
+    },
+    "details_images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "products"
     }
   }
 }
