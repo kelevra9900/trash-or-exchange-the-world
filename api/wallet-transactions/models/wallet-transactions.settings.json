@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallet_transactions",
+  "info": {
+    "name": "Wallet Transactions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "wallet": {
+      "model": "wallet",
+      "via": "wallet_transactions"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "wallet_transactions"
+    }
+  }
+}

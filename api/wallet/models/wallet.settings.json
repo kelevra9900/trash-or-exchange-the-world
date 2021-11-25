@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallets",
+  "info": {
+    "name": "wallet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "balance": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "NaN"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "wallet"
+    },
+    "wallet_transactions": {
+      "via": "wallet",
+      "collection": "wallet-transactions"
+    }
+  }
+}

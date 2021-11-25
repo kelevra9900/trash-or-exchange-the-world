@@ -62,6 +62,14 @@
     "products": {
       "via": "users_permissions_user",
       "collection": "product"
+    },
+    "wallet": {
+      "via": "users_permissions_user",
+      "model": "wallet"
+    },
+    "wallet_transactions": {
+      "via": "users_permissions_user",
+      "collection": "wallet-transactions"
     }
   }
 }

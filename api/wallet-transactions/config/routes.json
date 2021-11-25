@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wallet-transactions",
+      "handler": "wallet-transactions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wallet-transactions/count",
+      "handler": "wallet-transactions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wallet-transactions/:id",
+      "handler": "wallet-transactions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wallet-transactions",
+      "handler": "wallet-transactions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wallet-transactions/:id",
+      "handler": "wallet-transactions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wallet-transactions/:id",
+      "handler": "wallet-transactions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
